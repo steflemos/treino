@@ -1,0 +1,84 @@
+/* MyPlan.css */
+.my-plan-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.my-plan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 20px 80px;
+}
+
+.my-plan-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.my-plan-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.my-plan-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.my-plan-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.RemoveButton{
+    background-color: #f04158;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.CompleteButton{
+    background-color: #67be9b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.DetailsButton {
+    text-decoration: none;
+    background-color: #2e97b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.RemoveButton:hover, .CompleteButton:hover, .DetailsButton:hover {
+    background-color: #4c5e91;
+}

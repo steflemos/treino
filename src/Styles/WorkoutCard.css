@@ -1,0 +1,35 @@
+/* WorkoutCard.css */
+.workout-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.workout-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.workout-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.workout-card button {
+    background-color: #2e97b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.workout-card button:hover {
+    background-color: #4c5e91;
+}

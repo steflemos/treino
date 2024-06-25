@@ -1,0 +1,41 @@
+/* WorkoutDetails.css */
+.workout-details-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.workout-details-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.workout-details-card h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.workout-details-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.workout-details-card button {
+    background-color: #2e97b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.workout-details-card button:hover {
+    background-color: #4c5e91;
+}
