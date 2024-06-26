@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Home from '../components/Home';
@@ -7,8 +7,23 @@ import WorkoutDetails from '../components/WorkoutDetails';
 import History from '../components/History';
 
 function AppRoutes() {
-  const [myPlan, setMyPlan] = useState([]);
-  const [history, setHistory] = useState([]);
+  const [myPlan, setMyPlan] = useState(() => {
+    const savedMyPlan = localStorage.getItem('myPlan');
+    return savedMyPlan ? JSON.parse(savedMyPlan) : [];
+  });
+
+  const [history, setHistory] = useState(() => {
+    const savedHistory = localStorage.getItem('history');
+    return savedHistory ? JSON.parse(savedHistory) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('myPlan', JSON.stringify(myPlan));
+  }, [myPlan]);
+
+  useEffect(() => {
+    localStorage.setItem('history', JSON.stringify(history));
+  }, [history]);
 
   const addToPlan = (workout) => {
     setMyPlan([...myPlan, workout]);

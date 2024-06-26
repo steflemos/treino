@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import WorkoutCard from './WorkoutCard';
 import '../Styles/Home.css';  
 
 function Home({ addToPlan }) {
-  const [workouts, setWorkouts] = useState([
+  const [workouts] = useState([
     { id: 1, name: 'Treino de Força Total', 
       description: 'Fortalece todo o corpo, aumenta a confiança e melhora a postura.', 
       description2:'Agachamento, levantamento terra, supino, remada.', 
